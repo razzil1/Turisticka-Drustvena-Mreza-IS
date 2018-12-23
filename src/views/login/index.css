@@ -1,0 +1,73 @@
+.login-wrapper {
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-image-wrapper {
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.login-image-wrapper > img {
+    width: 100vw;
+    text-align: center;
+}
+
+.login-form-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login-form-wrapper > form {
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+
+.login-form-wrapper > form > input{
+    width:calc(100% - 10px);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color:rgba(256, 256, 256, 0.5);
+    background:transparent;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid white;
+    padding:10px 5px 10px 5px;
+    margin-bottom: 20px;
+}
+
+.login-form-wrapper > form > input::placeholder {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color:rgba(256, 256, 256, 0.5);
+}
+
+.login-form-wrapper > form > label{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color:rgba(256, 256, 256, 0.5);
+}
+
+.login-form-wrapper > form > button{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color:rgba(256, 256, 256, 0.5);
+    border:1px solid rgba(256, 256, 256, 0.5);
+    padding:10px;
+    background:transparent;
+    width: 100%;
+    border-radius: 26px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-form-wrapper > form > button:hover{
+    background:rgba(256, 256, 256, 0.015);
+    transition: .3s
+}
