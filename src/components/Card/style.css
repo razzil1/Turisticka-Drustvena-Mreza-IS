@@ -5,7 +5,50 @@
   display: inline-block;
 }
 
-.cardImg {
+.cardMain {
   width: 300px;
   height: 200px;
+  position: relative;
 }
+
+.cardTitle {
+  margin-left: 5px;
+  position: absolute;
+  bottom: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  left: 3px;
+}
+
+.cardPrice {
+  position: absolute;
+  bottom: 5px;
+  right: 3px;
+  color: rgb(28, 240, 0);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cardStars {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.cardDescription {
+  color: #484848;
+  margin-left: 10px;
+}
+
+.cardButton {
+  font-size: 24px;
+  float: right;
+  margin-right: 5px;
+}
+
+.cardButton:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: rotate(-20px);
+}
+

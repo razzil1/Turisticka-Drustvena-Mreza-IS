@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
-import travel1 from '../../image/travel1.jpeg';
+import ReactStars from 'react-stars'
 import './style.css';
 
 class Card extends Component {
     render () {
         return (
             <div className="card">
-              <img className="cardImg" src={this.props.image}></img>
-              <h3>{this.props.title}</h3>
+              <div className="cardMain"
+              style={{backgroundImage: `url(${this.props.image})`, backgroundSize: 'cover'}}>
+                <span className="cardTitle">{this.props.title}</span>
+                <span className="cardPrice">{this.props.price}$</span>
+              </div>
+              <ReactStars className="cardStars" size={24} />
+              <span className="cardDescription">{this.props.description}</span>
+              <a className="cardButton">Posetite ➡</a>
             </div>
         )
     }

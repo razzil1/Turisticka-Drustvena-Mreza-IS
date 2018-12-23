@@ -7,8 +7,8 @@ class Home extends Component {
     render () {
         return (
           <div style={{marginLeft: '10px'}}>
-            <Card title="Grand Canyon" image={travel1} />
-            <Card title="Test" image={travel2} />
+            <Card title="Grand Canyon" image={travel1} price="899" description="Otkrite neistrazene delove Amerike..." />
+            <Card title="Tanzania" image={travel2} price="899" description="Zavirite u najlepse predele Tanzanije..." />
           </div>
         )
     }
