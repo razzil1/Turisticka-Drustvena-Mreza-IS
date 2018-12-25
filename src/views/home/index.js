@@ -1,17 +1,47 @@
 import React, { Component } from 'react';
+
+import './index.css';
 import Card from '../../components/Card';
 import travel1 from '../../image/travel1.jpeg';
 import travel2 from '../../image/travel2.jpg';
+import { data } from './fakeData'
 
 class Home extends Component {
+    state = {
+      selectedType: 'all'
+    }
+    renderOffers = () => {
+      let offers = [];
+      data.map((item, i) => {
+        if(this.state.selectedType === 'all') {
+          offers.push(<Card key={i} title={item.title} image={item.image} price={item.price} description={item.description} />)
+        } else if(this.state.selectedType === 'aranzman' && item.type===this.state.selectedType) {
+          offers.push(<Card key={i} title={item.title} image={item.image} price={item.price} description={item.description} />)
+        } else if(this.state.selectedType === 'smestaj' && item.type===this.state.selectedType) {
+          offers.push(<Card key={i} title={item.title} image={item.image} price={item.price} description={item.description} />)
+        } 
+      })
+      return offers;
+    }
     render () {
+      let wrapper = {
+        width: '90vw',
+        margin: '0 auto',
+        textAlign: 'center',
+        marginTop: '50px'
+      }
         return (
-          <div>
-            <Card title="Grand Canyon" image={travel1} price="899" description="Otkrite neistrazene delove Amerike..." />
-            <Card title="Tanzania" image={travel2} price="899" description="Zavirite u najlepse predele Tanzanije..." />
-            <Card title="Grand Canyon" image={travel1} price="899" description="Otkrite neistrazene delove Amerike..." />
-            <Card title="Tanzania" image={travel2} price="899" description="Zavirite u najlepse predele Tanzanije..." />
-          </div>
+          <React.Fragment>
+            <div className="home-top-image-wrapper"></div>
+            <div className="home-floating-buttons-wrapper">
+              <div onClick={() => this.setState({selectedType:'aranzman'})}>Aranzmani</div>
+              <div onClick={() => this.setState({selectedType:'smestaj'})}>Smestaji</div>
+              <div onClick={() => this.setState({selectedType:'all'})}>Utisci</div>
+            </div>
+            <div style={wrapper}>
+              {this.renderOffers()}
+            </div>
+          </React.Fragment>
         )
     }
 }
