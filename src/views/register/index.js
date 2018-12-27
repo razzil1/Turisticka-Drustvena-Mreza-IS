@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import loginImage from '../../image/login4.jpg';
 import './index.css';
-class Login extends Component {
+class Register extends Component {
     render () {
         return (
             <div className="login-wrapper">
@@ -13,7 +13,7 @@ class Login extends Component {
                             {/* <label for="username">Sifra:</label> <br /> */}
                             <input id="username" type="password" placeholder="Sifra..." />
                             <button type="button" onClick={() => this.props.history.push('/home')}>Prijavi se</button>
-                            <p>Nemate nalog? <span onClick={() => this.props.history.push('/register')}>Napravi nalog</span></p>
+                            <p>Imate nalog? <span onClick={() => this.props.history.push('/')}>Prijavite se</span></p>
                         </form>
                     </div>
                     <img src={loginImage} />
@@ -26,4 +26,4 @@ class Login extends Component {
     }
 }
 
-export default Login
+export default Register

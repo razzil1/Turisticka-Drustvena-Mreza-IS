@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ReactStars from 'react-stars'
-import './style.css';
+import { withRouter } from 'react-router-dom';
 
+import './style.css';
 class Card extends Component {
     render () {
         return (
@@ -13,10 +14,10 @@ class Card extends Component {
               </div>
               <ReactStars className="cardStars" size={24} />
               <span className="cardDescription">{this.props.description}</span>
-              <a className="cardButton">Posetite ➡</a>
+              <a onClick={() => this.props.history.push('/view')} className="cardButton">Posetite ➡</a>
             </div>
         )
     }
 }
 
-export default Card;
+export default withRouter(Card);
