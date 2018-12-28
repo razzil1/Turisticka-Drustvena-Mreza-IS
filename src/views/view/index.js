@@ -34,7 +34,7 @@ class View extends Component {
                         </div>
                         <div className="view-info-wrapper">
                         <div className='view-single-info'>
-                            <span>Opis</span> <br /><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                            <span>Opis</span> <br /><span>Grad muzike, valcera, umetnosti, prelepih parkova, ukusne saher torte. Grad u kome ćete moći da kupujete do mile volje u dugim shopping ulicama. Veličanstven grad, s bogatim arithektonskim i kulturnim nasleđem, po svom šarmu i raskoši, blizak Parizu i Rimu.</span>
                         </div>
                         <div className="view-info-stuff">
                             <div>
