@@ -9,7 +9,7 @@
 .view-wrapper > div:first-child {
     width:700px;
     height:500px;
-    background: white;
+    background: rgba(33,33,33,.9);
     border-radius: 8px;
     -webkit-box-shadow: 0px 1px 13px 0px rgb(74, 74, 74);
     -moz-box-shadow: 0px 1px 13px 0px  rgb(74, 74, 74);
@@ -32,7 +32,7 @@
     float: right;
     width:calc(50vw - 400px);
     height:100vh;
-    background: rgba(33, 33, 33,  0.5);
+    background: rgba(33, 33, 33,  0.8);
     border-radius: 8px 0px 0px 8px
 }
 
@@ -130,4 +130,45 @@
 .image-me {
     background:transparent;
     
+}
+
+.view-single-info {
+    width:100%;
+    height: fit-content;
+    padding:20px 0px 0px 20px;
+}
+
+.view-single-info {
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    width:94%;
+    text-align: justify;
+}
+
+.view-title  > span{
+    font-size: 24px;
+}
+
+.view-single-info  > span:first-child{
+    text-decoration: underline
+}
+
+.view-info-stuff {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 95px;
+}
+
+.view-info-stuff > div {
+    width:33.33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.view-info-stuff > div > div {
+    width:100%;
+    color:white;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
 }
