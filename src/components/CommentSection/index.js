@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MessageMe from '../MessageMe'
 import MessageOther from '../MessageOther'
 import { data } from '../../views/home/fakeData';
-
+import FadeIn from 'react-fade-in'
 import { commentData } from './fakeData'
 class CommentSection extends Component {
     state = {
@@ -57,7 +57,9 @@ class CommentSection extends Component {
             this.state.comments ?
                 <div className="comment-wrapper">
                     <div className="comment-conversation-wrapper">
+                    <FadeIn>
                         {this.renderComments()}
+                        </FadeIn>
                     </div>
                     <input id="comment" defaultValue={this.state.input} onKeyUp={(e) => this.handleKeyPress(e)} type="text" placeholder="Vas komentar..."/> <br />
                     <button onClick={() => this.handleAddComment(this.state.input)} type="button" > Komentarisi </button>
