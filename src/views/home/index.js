@@ -14,11 +14,11 @@ class Home extends Component {
       let offers = [];
       data.map((item, i) => {
         if(this.state.selectedType === 'all') {
-          offers.push(<Card key={i} title={item.title} image={item.image} price={item.price} description={item.description} />)
+          offers.push(<Card key={i} id={item.id} title={item.title} image={item.image} price={item.price} description={item.description} />)
         } else if(this.state.selectedType === 'aranzman' && item.type===this.state.selectedType) {
-          offers.push(<Card key={i} title={item.title} image={item.image} price={item.price} description={item.description} />)
+          offers.push(<Card key={i} id={item.id} title={item.title} image={item.image} price={item.price} description={item.description} />)
         } else if(this.state.selectedType === 'smestaj' && item.type===this.state.selectedType) {
-          offers.push(<Card key={i} title={item.title} image={item.image} price={item.price} description={item.description} />)
+          offers.push(<Card key={i} id={item.id} title={item.title} image={item.image} price={item.price} description={item.description} />)
         } 
       })
       return offers;

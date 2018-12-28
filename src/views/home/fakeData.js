@@ -1,5 +1,6 @@
 export let data = [
     {
+        id:1,
         title: 'Grand Canyon',
         image: require('../../image/travel1.jpeg'),
         price: 2000,
@@ -7,6 +8,7 @@ export let data = [
         type: 'aranzman'
     },
     {
+        id:2,
         title: 'Tanzania',
         image: require('../../image/travel2.jpg'),
         price: 1700,
@@ -14,6 +16,7 @@ export let data = [
         type: 'aranzman'
     },
     {
+        id:3,
         title: 'Beograd',
         image: require('../../image/destinations/beograd.jpg'),
         price: 300,
@@ -21,6 +24,7 @@ export let data = [
         type: 'smestaj'
     },
     {
+        id:4,
         title: 'Vrnjacka Banja',
         image: require('../../image/destinations/vrnjacka.jpeg'),
         price: 120,
@@ -28,6 +32,7 @@ export let data = [
         type: 'smestaj'
     },
     {
+        id:5,
         title: 'Djavolja Varos',
         image: require('../../image/destinations/djavolja.JPG'),
         price: 120,
@@ -35,6 +40,7 @@ export let data = [
         type: 'smestaj'
     },
     {
+        id:6,
         title: 'Las Vegas',
         image: require('../../image/destinations/lasvegas.jpg'),
         price: 1400,
@@ -42,6 +48,7 @@ export let data = [
         type: 'aranzman'
     },
     {
+        id:7,
         title: 'Zlatibor',
         image: require('../../image/destinations/zlatibor.jpg'),
         price: 200,
@@ -49,6 +56,7 @@ export let data = [
         type: 'smestaj'
     },
     {
+        id:8,
         title: 'Miami Beach',
         image: require('../../image/destinations/miamibeach.jpg'),
         price: 1300,
@@ -56,6 +64,7 @@ export let data = [
         type: 'aranzman'
     },
     {
+        id:9,
         title: 'Srebrno jezero',
         image: require('../../image/destinations/srebrnojezero.jpg'),
         price: 50,
@@ -63,6 +72,7 @@ export let data = [
         type: 'smestaj'
     },
     {
+        id:10,
         title: 'Golubac',
         image: require('../../image/destinations/golobac.jpg'),
         price: 50,
@@ -70,6 +80,7 @@ export let data = [
         type: 'smestaj'
     },
     {
+        id:11,
         title: 'Bec',
         image: require('../../image/destinations/Bec.png'),
         price: 150,
@@ -77,6 +88,7 @@ export let data = [
         type: 'aranzman'
     },
     {
+        id:12,
         title: 'Pamukale',
         image: require('../../image/destinations/pamukale.jpg'),
         price: 350,
@@ -85,6 +97,7 @@ export let data = [
     },
 
     {
+        id:13,
         title: 'Prag',
         image: require('../../image/destinations/prag.jpeg'),
         price: 200,
@@ -92,6 +105,7 @@ export let data = [
         type: 'aranzman'
     },
     {
+        id:14,
         title: 'Rim',
         image: require('../../image/destinations/rim.jpg'),
         price: 400,
@@ -99,6 +113,7 @@ export let data = [
         type: 'aranzman'
     },
     {
+        id:15,
         title: 'Barselona',
         image: require('../../image/destinations/barselona.jpg'),
         price: 600,
@@ -106,6 +121,7 @@ export let data = [
         type: 'smestaj'
     },
     {
+        id:16,
         title: 'Denali',
         image: require('../../image/destinations/denali.jpeg'),
         price: 1324,

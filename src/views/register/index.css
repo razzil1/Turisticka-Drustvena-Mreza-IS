@@ -24,7 +24,7 @@
     position: absolute;
     width: 300px;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: 70px;
 }
 
@@ -65,6 +65,7 @@
     border-radius: 26px;
     margin-top: 20px;
     cursor: pointer;
+    outline: none;
 }
 
 .login-form-wrapper > form > button:hover{
@@ -91,4 +92,45 @@
     color:white;
     text-decoration: underline;
     cursor:pointer;
+}
+
+.register-role-wrapper {
+    position: absolute;
+    width: 100%;
+    margin-top: 40px
+}
+
+.register-role-wrapper > p{
+    color:rgba(256, 256, 256, 0.5);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 70px;
+}
+
+.register-role-wrapper > button{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color:rgba(256, 256, 256, 0.5);
+    border:1px solid rgba(256, 256, 256, 0.5);
+    padding:10px;
+    background:transparent;
+    width: fit-content;
+    border-radius: 26px;
+    margin-top: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.register-role-wrapper > button:first-child{
+    margin-left: 70px;
+}
+
+.btn-selected {
+    background-color:rgba(256, 256, 256, 0.1)!important;
+    transition:.2s;
+}
+
+.btn-submit {
+    background-color:rgba(256, 256, 256, 0.15)!important;
 }

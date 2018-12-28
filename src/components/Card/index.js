@@ -14,7 +14,7 @@ class Card extends Component {
               </div>
               <ReactStars className="cardStars" size={24} />
               <span className="cardDescription">{this.props.description}</span>
-              <a onClick={() => this.props.history.push('/view')} className="cardButton">Posetite ➡</a>
+              <a onClick={() => this.props.history.push(`/view/${this.props.id}`)} className="cardButton">Posetite ➡</a>
             </div>
         )
     }
